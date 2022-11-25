@@ -1,9 +1,10 @@
 import gpiozero
 import time
+from flask_cors import CORS
 from flask import Flask, current_app, jsonify, request
 robot = gpiozero.Robot(left=(17, 18), right=(27, 22))
 app = Flask(__name__)
-
+CORS(app)
 
 @app.route("/", methods=['GET'])
 def index():
