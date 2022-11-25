@@ -10,7 +10,7 @@ def index():
     return current_app.send_static_file("index.html")
 
 
-@app.route('/right', methods=['GET'])
+@app.route("/right", methods=['GET'])
 def right():
     robot.right()
     time.sleep(0.25)
