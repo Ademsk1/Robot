@@ -9,15 +9,15 @@ async function buttonClick(command) {
     })
     data = await res.json()
 }
-async function up() {
+function up() {
     buttonClick('forward')
 }
-async function reverse() {
+function reverse() {
     buttonClick('reverse')
 }
-async function left() {
+function left() {
     buttonClick('left')
 }
-async function right() {
+function right() {
     buttonClick('right')
 }
