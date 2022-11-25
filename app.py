@@ -17,22 +17,22 @@ def right():
     robot.stop()
 
 
-@app.route('/left')
+@app.route('/left', methods=['GET'])
 def left():
     robot.left()
     time.sleep(0.25)
     robot.stop()
 
 
-@app.route('/forward')
-def right():
+@app.route('/forward', methods=['GET'])
+def forward():
     robot.right()
     time.sleep(0.25)
     robot.stop()
 
 
-@app.route('/reverse')
-def right():
+@app.route('/reverse', methods=['GET'])
+def reverse():
     robot.reverse()
     time.sleep(0.25)
     robot.stop()
