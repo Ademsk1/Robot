@@ -1,0 +1,23 @@
+.button {
+    justify-content: center;
+    position:absolute;
+    margin:auto;
+    width:150px;
+    height: 150px;
+}
+#up {
+    top: 30%;
+    left: 50%;
+}
+#left {
+    top: 50%;
+    left: 40%;
+}
+#right {
+    top: 50%;
+    left: 60%;
+}
+#reverse {
+    top: 60%;
+    left: 50%;
+}
