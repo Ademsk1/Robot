@@ -6,7 +6,7 @@ async function buttonClick(command) {
         method: 'GET',
         headers: {
             accept: 'application/json',
-            "Access-Control-Allow-Origin": "*"
+            mode: 'no-cors'
         }
     })
 
