@@ -2,7 +2,10 @@
 //first test, let the button click activate the robot to move for a short period. 
 async function buttonClick(command) {
     const res = await fetch(`http://192.168.1.80:5000/${command}`, {
-        method: 'GET'
+        method: 'GET',
+        headers: {
+            accept: 'application/json'
+        }
     })
     data = await res.json()
 }
