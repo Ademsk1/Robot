@@ -28,7 +28,7 @@ def left():
 
 @app.route('/forward', methods=['GET'])
 def forward():
-    robot.right()
+    robot.forward()
     time.sleep(0.25)
     robot.stop()
     return 'ok'
