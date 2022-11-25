@@ -6,15 +6,15 @@ async function buttonClick(command) {
     })
     data = await res.json()
 }
-const up = () => {
+async function up() {
     buttonClick('forward')
 }
-const reverse = () => {
+async function reverse() {
     buttonClick('reverse')
 }
-const left = () => {
+async function left() {
     buttonClick('left')
 }
-const right  = () => {
+async function right() {
     buttonClick('right')
 }
