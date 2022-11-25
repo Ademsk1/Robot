@@ -1,7 +1,7 @@
 
 //first test, let the button click activate the robot to move for a short period. 
 async function buttonClick(command) {
-    const res = await fetch(`${window.location.href}/${command}`, {
+    const res = await fetch(`http://0.0.0.0:5000/${command}`, {
         method: 'GET'
     })
     data = await res.json()
