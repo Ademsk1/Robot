@@ -1,7 +1,7 @@
 import gpiozero
 import time
 from flask import Flask, current_app, jsonify, request
-robot = gpiozero.robot(left=(17, 18), right=(27, 22))
+robot = gpiozero.Robot(left=(17, 18), right=(27, 22))
 app = Flask(__name__)
 
 
