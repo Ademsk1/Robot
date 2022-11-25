@@ -18,7 +18,7 @@ def right():
     return jsonify('ok')
 
 
-@app.route('/left', methods=['GET'])
+@app.route("/left", methods=['GET'])
 def left():
     robot.left()
     time.sleep(0.25)
@@ -26,7 +26,7 @@ def left():
     return jsonify('ok')
 
 
-@app.route('/forward', methods=['GET'])
+@app.route("/forward", methods=['GET'])
 def forward():
     robot.forward()
     time.sleep(0.25)
@@ -34,13 +34,9 @@ def forward():
     return jsonify('ok')
 
 
-@app.route('/reverse', methods=['GET'])
+@app.route("/reverse", methods=['GET'])
 def reverse():
     robot.reverse()
     time.sleep(0.25)
     robot.stop()
     return jsonify('ok')
-
-
-if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0')
