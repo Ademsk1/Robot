@@ -41,3 +41,6 @@ def reverse():
     time.sleep(0.25)
     robot.stop()
     return jsonify('ok')
+if __name__=='__main__':
+	app.run(debug=True,host='0.0.0.0')
+
