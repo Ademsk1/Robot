@@ -2,7 +2,7 @@ import gpiozero
 import time
 from flask_cors import CORS
 from flask import Flask, current_app, jsonify, request
-robot = gpiozero.Robot(left=(17, 18), right=(27, 22))
+robot = gpiozero.Robot(left=(27, 22), right=(17, 18))
 app = Flask(__name__)
 CORS(app)
 
@@ -40,6 +40,7 @@ def reverse():
 @app.route('/stop', methods=['GET'])
 def stop():
     robot.stop()
+    return jsonify('ok')
 
 
 if __name__ == '__main__':

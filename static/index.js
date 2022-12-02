@@ -41,6 +41,7 @@ window.addEventListener('DOMContentLoaded', function () {
             left()
         }
         if (e.ley=='ArrowRight') {
+            console.log('here')
             right()
         }
         if (e.key=='ArrowUp') {
