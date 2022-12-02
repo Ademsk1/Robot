@@ -7,8 +7,10 @@ def servo_setup():
     GPIO.setup(7, GPIO.OUT)
     servo = GPIO.PWM(7, 50)
     servo.start(0)
+    return servo
 
 
+servo = servo_setup()
 servo.changeDutyCycle(2)
 time.sleep(0.5)
 servo.changeDutyCycle(0)
