@@ -1,23 +1,22 @@
-.button {
-    justify-content: center;
-    position:absolute;
-    margin:auto;
-    width:150px;
-    height: 150px;
+body {
+    height:100%;
+    width:100%;
+    background-color:linear-gradient(rgba(0,255,255,0.5),rgba(255,255,125,0.5))
 }
-#up {
-    top: 30%;
-    left: 50%;
+.middleContainer {
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+
 }
-#left {
-    top: 50%;
-    left: 40%;
+.upperContainer, .lowerContainer {
+    display:flex;
+    justify-content:center;
 }
-#right {
-    top: 50%;
-    left: 60%;
-}
-#reverse {
-    top: 60%;
-    left: 50%;
+button {
+    width:200px;
+    height:200px;
+    margin:25px;
+    font-size:50px;
+
 }

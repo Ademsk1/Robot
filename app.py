@@ -15,33 +15,31 @@ def index():
 @app.route("/right", methods=['GET'])
 def right():
     robot.right()
-    time.sleep(1)
-    robot.stop()
     return jsonify('ok')
 
 
 @app.route("/left", methods=['GET'])
 def left():
     robot.left()
-    time.sleep(1)
-    robot.stop()
     return jsonify('ok')
 
 
 @app.route("/forward", methods=['GET'])
 def forward():
     robot.forward()
-    time.sleep(1)
-    robot.stop()
     return jsonify('ok')
 
 
 @app.route("/reverse", methods=['GET'])
 def reverse():
     robot.backward()
-    time.sleep(1)
-    robot.stop()
+
     return jsonify('ok')
+
+
+@app.route('/stop', methods=['GET'])
+def stop():
+    robot.stop()
 
 
 if __name__ == '__main__':
