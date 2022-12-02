@@ -40,7 +40,7 @@ window.addEventListener('DOMContentLoaded', function () {
         if (e.key=='ArrowLeft') {
             left()
         }
-        if (e.ley=='ArrowRight') {
+        if (e.key=='ArrowRight') {
             console.log('here')
             right()
         }
