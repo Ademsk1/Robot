@@ -2,7 +2,18 @@ import gpiozero
 import time
 from flask_cors import CORS
 from flask import Flask, current_app, jsonify, request
+import RPi.GPIO as GPIO
+
+
+def servo_setup():
+    GPIO.setMode(GPIO.BOARD)
+    GPIO.setup(7, GPIO.OUT)
+    servo = GPIO.PWM(7, 50)
+    servo.start(0)
+
+
 robot = gpiozero.Robot(left=(27, 22), right=(17, 18))
+
 app = Flask(__name__)
 CORS(app)
 
